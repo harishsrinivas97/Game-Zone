@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="RPC.css">
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+        <button class="choice" onclick="playGame('rock')">
+            <img src="fist.jpg" alt="Rock" width="100px" heigth="51px">
+            <div>rock</div>
+        </button>
+        <button class="choice" onclick="playGame('paper')">
+            <img src="papper.jpg" alt="Paper" width="100px" height="105px">
+            <div>papper</div>
+        </button>
+        <button class="choice" onclick="playGame('scissors')">
+            <img src="sicssor.jpg" alt="Scissors" width="100px" height="105">
+            <div>scissor</div>
+        </button>
+    </div>
+    <p id="result"></p>
+    <script src="RPC.js"></script>
+</body>
+</html>

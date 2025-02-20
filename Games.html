@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #00ffff;
+            text-align: center;
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5em;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+        }
+
+        .game-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .game {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .game:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.9);
+        }
+
+        img {
+            border-radius: 10px;
+            transition: transform 0.3s;
+            width: 250px;
+            height: 250px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+        }
+
+        .game div {
+            margin-top: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #ffcc00;
+            text-shadow: 0 0 5px #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to GameZone</h1>
+    <div class="game-container">
+        <div class="game">
+            <a href="http://127.0.0.1:3000/Tic-tac-toe org/tic_tac_toe2/tic-tac-toe2.html" target="_blank">
+                <img src="OIP.jpeg" alt="Tic-Tac-Toe (with computer)">
+            </a>
+            <div>Tic-Tac-Toe (with Computer)</div>
+        </div>
+        <div class="game">
+            <a href="http://127.0.0.1:3000/Tic-tac-toe org/tic-tac-toe/tic-tac-toe.html" target="_blank">
+                <img src="OIP.jpeg" alt="Tic-Tac-Toe (Two Player)">
+            </a>
+            <div>Tic-Tac-Toe (Two Player)</div>
+        </div>
+    </div>
+</body>
+</html>

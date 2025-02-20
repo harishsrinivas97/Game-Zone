@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        .game-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+        .game {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .game:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+        img {
+            border-radius: 10px;
+            transition: transform 0.3s;
+            width: 250px;
+            height: 250px;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        .game div {
+            margin-top: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to GameZone</h1>
+    <div class="game-container">
+        <div class="game">
+            <a href="http://127.0.0.1:3000/rock,papper,sicssor/RPC.html" target="_blank">
+                <img src="rock,paper,scissor.jpeg" alt="Rock-Paper-Scissors">
+            </a>
+            <div>Rock-Paper-Scissors</div>
+        </div>
+        <div class="game">
+            <a href="http://127.0.0.1:3000/quiz/quiz.html" target="_blank">
+                <img src="qiuz.jpg" alt="Quiz Game">
+            </a>
+            <div>Quiz</div>
+        </div>
+        <div class="game">
+            <a href="http://127.0.0.1:3000/Games.html" target="_blank">
+                <img src="OIP.jpeg" alt="Tic-Tac-Toe">
+            </a>
+            <div>Tic-Tac-Toe</div>
+        </div>
+    </div>
+</body>
+</html>
