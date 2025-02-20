@@ -70,9 +70,5 @@ Implement a leaderboard system.
 
 Improve AI for Rock-Paper-Scissors.
 
-📜 License
-
-This project is open-source under the MIT License.
-
-Developed with ❤️ by Your Name
+[siva]
 
